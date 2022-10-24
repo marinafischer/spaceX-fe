@@ -27,7 +27,7 @@ img {
 
   --bg-light: #f6e7d3;
 
-  --bs-color01: #9f0a28;
+  --bs-color01: #4d84ba;
 
   --bs-color02: #d55c2b;
 
@@ -51,5 +51,23 @@ html {
 .center-item{
   text-align: center;
   margin: 20px 10px;
+}
+
+.small-card-content{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.btn{
+  font-size: 20px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 15em;
+}
+
+
+.btn:hover{
+  opacity: 1;
+  cursor: pointer;
 }
 

@@ -1,12 +1,11 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
-import '../styles/bigCard.css';
+import '../styles/card.css';
+import { PropTypes } from 'prop-types';
 import convertDate from '../services/helpers/convertDate';
-// import PropTypes from 'prop-types';
 
 function BigCard({ info }) {
   return (
-    <div className="big-card-content">
+    <div className="card-content">
       <h1 className="main-title">{info.name}</h1>
       <img src={info.image} alt="imagem do lançamento" />
       <div className="info-content">
@@ -21,10 +20,13 @@ function BigCard({ info }) {
   );
 }
 
-// BigCard.propTypes = {
-//   info: PropTypes.shace({
-//     name: PropTypes.string,
-//   }).isRequired,
-// };
+BigCard.propTypes = {
+  info: PropTypes.shape({
+    name: PropTypes.string,
+    rocket: PropTypes.string,
+    image: PropTypes.string,
+    date: PropTypes.string,
+  }).isRequired,
+};
 
 export default BigCard;

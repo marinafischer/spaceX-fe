@@ -11,18 +11,9 @@
   margin: 15px 5px;
 }
 
-.button-option{
-  font-size: 20px;
-  padding: 5px;
-  margin: 5px;
+.option{
   background-color: var(--bs-color03);
   opacity: 0.7;
   color: var(--bs-color04);
   border: 2px solid var(--bs-color03);
-  border-radius: 15em;
-}
-
-.button-option:hover{
-  opacity: 1;
-  cursor: pointer;
 }

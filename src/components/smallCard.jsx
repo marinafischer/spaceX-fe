@@ -1,8 +1,8 @@
-/* eslint-disable react/prop-types */
 import { React, useState } from 'react';
+import PropTypes from 'prop-types';
 import convertDate from '../services/helpers/convertDate';
 import rocketImg from '../images/rocket.png';
-// import PropTypes from 'prop-types';
+import '../styles/card.css';
 
 function SmallCard({ info }) {
   const [details, setDetails] = useState({});
@@ -18,17 +18,21 @@ function SmallCard({ info }) {
   };
 
   return (
-    <div>
-      <h1>{info.name}</h1>
-      <h1>lançamento:</h1>
-      <h1>{convertDate(info.date)}</h1>
-      <button type="button" onClick={handleClick}>{buttonTxt}</button>
+    <div className="card-content">
+      <h1 className="main-title">{info.name}</h1>
+      <div className="info-content">
+        <h1>Lançamento:&nbsp;</h1>
+        <h1>{convertDate(info.date)}</h1>
+      </div>
+      <button className="btn details" type="button" onClick={handleClick}>{buttonTxt}</button>
       {
         details.id && (
           <>
             <img src={(details.image ? details.image : rocketImg)} alt="imagem do lançamento" />
-            <p>Foguete:</p>
-            <p>{details.rocket}</p>
+            <div className="info-content">
+              <p>Foguete:&nbsp;</p>
+              <p>{details.rocket}</p>
+            </div>
           </>
         )
       }
@@ -36,10 +40,13 @@ function SmallCard({ info }) {
   );
 }
 
-// SmallCard.propTypes = {
-//   info: PropTypes.shace({
-//     name: PropTypes.string,
-//   }).isRequired,
-// };
+SmallCard.propTypes = {
+  info: PropTypes.shape({
+    name: PropTypes.string,
+    rocket: PropTypes.string,
+    image: PropTypes.string,
+    date: PropTypes.string,
+  }).isRequired,
+};
 
 export default SmallCard;

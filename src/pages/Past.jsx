@@ -18,12 +18,13 @@ function Past() {
 
   return (
     <>
-      <h1>Tudo sobre os últimos lançamentos</h1>
-      {
-        launches.length
-        && launches.map((launch) => (<SmallCard info={launch} key={launch.id} />))
-
-      }
+      <h1 className="main-title center-item">Últimos Lançamentos</h1>
+      <div className="small-card-content">
+        {
+          launches.length
+          && launches.map((launch) => (<SmallCard info={launch} key={launch.id} />))
+        }
+      </div>
     </>
   );
 }
