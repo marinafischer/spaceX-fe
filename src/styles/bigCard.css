@@ -1,0 +1,19 @@
+.big-card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  color: var(--bs-dark);
+  width: 35%;
+  border: 2px solid var(--bs-color03);
+  padding: 10px;
+  border-radius: 2em;
+  box-shadow: 3px 5px 15px var(--bs-dark);
+  background-color: var(--bs-color05);
+}
+
+.info-content{
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+}

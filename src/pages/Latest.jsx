@@ -18,7 +18,7 @@ function Latest() {
 
   return (
     <>
-      <h1>Tudo sobre o último lançamento</h1>
+      <h1 className="main-title center-item">Último Lançamento</h1>
       {
         launch.id && <BigCard info={launch} />
       }

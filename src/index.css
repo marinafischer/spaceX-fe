@@ -35,6 +35,8 @@ img {
 
   --bs-color04: #55203c;
 
+  --bs-color05: #b3c7a0;
+
   --bs-dark: #444;
 }
 
@@ -44,5 +46,10 @@ html {
 
 .main-title {
   color: var(--bs-dark);
+}
+
+.center-item{
+  text-align: center;
+  margin: 20px 10px;
 }
 

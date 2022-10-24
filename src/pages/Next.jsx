@@ -18,7 +18,7 @@ function Next() {
 
   return (
     <>
-      <h1>Tudo sobre o próximo lançamento</h1>
+      <h1 className="main-title center-item">Próximo Lançamento</h1>
       {
         launch.id && <BigCard info={launch} />
       }
