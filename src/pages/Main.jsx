@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import '../styles/main.css';
 
 function Main() {
   const navigate = useNavigate();
@@ -8,13 +9,16 @@ function Main() {
     navigate(e.target.value);
   };
   return (
-    <>
-      <h1>Para onde você desejar ir?</h1>
-      <button type="button" onClick={handleClick} value="/next">Próximo Lançamento</button>
-      <button type="button" onClick={handleClick} value="/latest">Último Lançamento</button>
-      <button type="button" onClick={handleClick} value="/upcoming">Próximos Lançamentos</button>
-      <button type="button" onClick={handleClick} value="/past">Últimos Lançamentos</button>
-    </>
+    <div className="main-content">
+      <h1 className="main-title">NAVEGUE PARA O LANÇAMENTO QUE DESEJAR</h1>
+      <div className="button-content">
+        <button className="button-option" type="button" onClick={handleClick} value="/next">Próximo Lançamento</button>
+        <button className="button-option" type="button" onClick={handleClick} value="/latest">Último Lançamento</button>
+        <button className="button-option" type="button" onClick={handleClick} value="/upcoming">Próximos Lançamentos</button>
+        <button className="button-option" type="button" onClick={handleClick} value="/past">Últimos Lançamentos</button>
+
+      </div>
+    </div>
   );
 }
 
