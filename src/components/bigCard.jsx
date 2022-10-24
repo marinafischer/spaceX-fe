@@ -7,10 +7,10 @@ function BigCard({ info }) {
   return (
     <>
       <h1>{info.name}</h1>
-      <img src={info.image} alt="imagem do proximo lançamento" />
+      <img src={info.image} alt="imagem do lançamento" />
       <p>Foguete:</p>
       <p>{info.rocket}</p>
-      <h1>lançamento previsto:</h1>
+      <h1>lançamento:</h1>
       <h1>{convertDate(info.date)}</h1>
     </>
   );
