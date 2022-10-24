@@ -6,15 +6,23 @@ import rocketImg from '../images/rocket.png';
 
 function SmallCard({ info }) {
   const [details, setDetails] = useState({});
+  const [buttonTxt, setButtonTxt] = useState('Ver detalhes');
   const handleClick = () => {
-    setDetails(info);
+    if (!details.id) {
+      setDetails(info);
+      setButtonTxt('Ver menos');
+    } else {
+      setDetails({});
+      setButtonTxt('Ver detalhes');
+    }
   };
+
   return (
     <div>
       <h1>{info.name}</h1>
       <h1>lançamento:</h1>
       <h1>{convertDate(info.date)}</h1>
-      <button type="button" onClick={handleClick}>Ver detalhes</button>
+      <button type="button" onClick={handleClick}>{buttonTxt}</button>
       {
         details.id && (
           <>

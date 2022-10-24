@@ -13,7 +13,7 @@ function Main() {
       <button type="button" onClick={handleClick} value="/next">Próximo Lançamento</button>
       <button type="button" onClick={handleClick} value="/latest">Último Lançamento</button>
       <button type="button" onClick={handleClick} value="/upcoming">Próximos Lançamentos</button>
-      <button type="button" onClick={handleClick} value="/past">Próximos Lançamentos</button>
+      <button type="button" onClick={handleClick} value="/past">Últimos Lançamentos</button>
     </>
   );
 }
