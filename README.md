@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# SpaceX App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Esta aplicação foi criada com o intuíto de consumir os dados da API criada no repositório:
+  ```https://github.com/marinafischer/spaceX-be```
+É muito importante que você inicie clonando o repositório acima.
 
-## Available Scripts
+## Tecnologias
 
-In the project directory, you can run:
+  - JavaScript;
+  - React.JS;
+  - React-Router;
 
-### `npm start`
+## Para a execução do código, é necessário
+  - node v16;
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Para iniciar
+  - clone esse repositório:
+    ```git@github.com:marinafischer/spaceX-fe.git```
+  - entre na pasta criada:
+    ``cd spaceX-fe``
+  - na raiz do projeto execute o comando:
+    ```npm install```
+  - rode o comando:
+    ```npm start```
+  - a aplicação será iniciada na porta 3000 da sua máquina (lembre de startar a API também)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Documentação do APP
 
-### `npm test`
+### Tela Inicial
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+A aplicação inicia com uma tela com quatro opções para navegação.
+Ao clicar no botão desejado, você é redirecionado para uma tela com detalhes da opção escolhida;
 
-### `npm run build`
+### Tela do Próximo Lançamento
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Está opção é renderizada na rota /next
+Nesta tela, caso a API esteja rodando, é exibido um card com as informações de nome, imagem, foguete e data de lançamento(convertida para o formato brasileiro).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Tela do Último Lançamento
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Está opção é renderizada na rota /latest
+Nesta tela, caso a API esteja rodando, é exibido um card com as informações de nome, imagem, foguete e data de lançamento(convertida para o formato brasileiro).
 
-### `npm run eject`
+### Tela dos Próximos Lançamentos
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Está opção é renderizada na rota /upcoming
+Nesta tela, caso a API esteja rodando, são exibidos cards, cada um com as informações de nome e data de lançamento(convertida para o formato brasileiro), além de um botão "ver detalhes" que ao ser clicado, mostra as informações de imagem e foguete.
+Clicando no botão "ver menos", o card volta ao formato inicial.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Tela dos Últimos Lançamentos
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Está opção é renderizada na rota /past
+Nesta tela, caso a API esteja rodando, são exibidos cards, cada um com as informações de nome e data de lançamento(convertida para o formato brasileiro), além de um botão "ver detalhes" que ao ser clicado, mostra as informações de imagem e foguete.
+Clicando no botão "ver menos", o card volta ao formato inicial.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Alguma dúvida?
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- LinkedIn: [Marina Fischer](https://www.linkedin.com/in/marina-miranda-fischer/)
